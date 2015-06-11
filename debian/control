@@ -1,0 +1,29 @@
+Source: ruby-devise-lastseenable
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-devise,
+               ruby-rails (>= 3.0.4),
+               ruby-warden
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-devise-lastseenable.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-devise-lastseenable.git
+Homepage: http://github.com/ctide/devise_lastseenable
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-devise-lastseenable
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-devise,
+         ruby-rails (>= 3.0.4),
+         ruby-warden,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.
+ This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.
