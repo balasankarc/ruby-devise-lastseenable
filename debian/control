@@ -25,5 +25,8 @@ Depends: ruby | ruby-interpreter,
          ruby-warden,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.
- This ensures that devise will update a last_seen flag on the model whenever you check if a user is authed.
+Description: make devise update last_seen flag on user  
+ This gem can be used to ensure that devise will update a last_seen flag on the 
+ model whenever you check if a user is authed.
+ .
+ Devise is a flexible authentication solution for Rails based on Warden.
